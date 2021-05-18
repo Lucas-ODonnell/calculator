@@ -51,10 +51,27 @@ table {
 	box-sizing: border-box;
 }
 
+h1 {
+	color: rgba(255,255,255,1);
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 16px;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	background-color: black;
+}
+
+sup {
+	vertical-align: super;
+	font-size: 16px;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: 16px;
 }
 
 .calculator-grid {
@@ -63,7 +80,7 @@ body {
 	align-content: center;
 	grid-template-columns: repeat(5, 100px);
 	grid-template-rows: minmax(120px, auto)repeat(5, 100px);
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 .output {
@@ -78,13 +95,13 @@ body {
 	word-break: break-all;
 }
 
-.output .current-answer {
+.output .top-input {
 	color: rgb(255, 255, 255);
-	font-size:  2.5rem;
+	font-size:  1.5rem;
 }
 
-.output .current-input {
-	font-size: 1.5rem;
+.output .bottom-input {
+	font-size: 2.5rem;
 }
 
 .calculator-grid > button {
@@ -94,6 +111,9 @@ body {
 	border: none;
 }
 
+.span-three {
+	grid-column: span 3;
+}
 .span-two {
 	grid-column: span 2;
 }

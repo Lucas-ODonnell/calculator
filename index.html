@@ -6,14 +6,15 @@
 	<link rel="stylesheet" href="./stylesheets/main.css">
 	<script src="script.js" defer></script>
 	<body>
+		<h1>A Calculator</h1>
 		<div class="calculator-grid">
 			<div class="output">
-				<div class="current-input"></div>
-				<div class="current-answer"></div>
+				<div data-top-input class="top-input"></div>
+				<div data-bottom-input class="bottom-input"></div>
 			</div>
 			<button data-clear-all class="span-two is-warning" >C</button>
 			<button data-clear-one class="span-two is-warning">CE</button>
-			<button data-operation class="operand">!</button>
+			<button data-operation class="operand">log<sub>b</sub>x</button>
 			<button data-number class="numbers">1</button>
 			<button data-number class="numbers">2</button>
 			<button data-number class="numbers">3</button>
@@ -28,13 +29,12 @@
 			<button data-number class="numbers">8</button>
 			<button data-number class="numbers">9</button>
 			<button data-operation class="operand">^</button>
-			<button data-operation class="operand">√</button>
+			<button data-operation class="operand"><sup>n</sup>√(x)</button>
 			<button data-number class="numbers">.</button>
 			<button data-number class="numbers">0</button>
 			<button data-prepend class="numbers">+/-</button>
 			<button data-equals class="span-two is-warning">=</button>
 		</div>
-
 	</body>
 </html>
 
