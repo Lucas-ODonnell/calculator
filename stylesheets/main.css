@@ -111,9 +111,6 @@ sub {
 	border: none;
 }
 
-.span-three {
-	grid-column: span 3;
-}
 .span-two {
 	grid-column: span 2;
 }

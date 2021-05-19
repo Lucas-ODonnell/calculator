@@ -38,14 +38,6 @@ class Calculator {
 		this.currentOperation = "";
 	}
 
-	factorial(number) {
-		let factorialAnswer = 1;
-		for (let i=1; i <= number; i++) {
-			factorialAnswer *= i;
-		}
-		return factorialAnswer
-	}
-
 
 	calculate() {
 		let answer;
